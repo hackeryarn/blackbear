@@ -13,6 +13,9 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/cgdeboer/blackbear",
     packages=setuptools.find_packages(),
+    extras_require={
+      "benchmarks":  ["numpy", "polars", "pandas"]
+    },
     classifiers=(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
